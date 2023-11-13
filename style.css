@@ -1,465 +1,477 @@
-html, body{
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.hero-section{
-    background-image: url("./Images/Model-Blue-Dress-Sneakers.jpg");
-    padding: 160px 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+.hero-section {
+  background-image: url("./Images/fachry-zella-devandra-WBDK76pCb9E-unsplash.jpg");
+  padding: 160px 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  z-index: 1;
+}
+.hero-section .hero-section__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-section > h2 {
+  color: white;
+  font-size: 2.5rem;
+  width: 30%;
+  text-align: center;
+}
+
+.hero-section > a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(23, 23, 151);
+  padding: 10px 30px;
+}
+
+.hero-section > a:hover {
+  background-color: rgb(20, 20, 114);
+}
+
+.section-2 {
+  margin: 60px auto;
+  width: 80%;
+}
+
+.section-2 > div > img {
+  width: 40px;
+  height: 40px;
+}
+
+.section-2 > div > h5 {
+  margin-bottom: 25px;
+  color: rgb(45, 45, 156);
+}
+
+.section-2 > div > p {
+  width: 70%;
+}
+
+.section-3 {
+  background-color: rgb(250, 249, 249);
+}
+
+.section-3 > div:nth-child(1) {
+  background-image: url("./Images/white\ sneaker.jpg");
+  padding: 200px 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+}
+
+.section-3 > div:nth-child(1) > div {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+
+.section-3 > div:nth-child(2) {
+  margin: 50px auto 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-areas:
+    "a a a b b b"
+    "c c c d d d"
+    "c c c e e e";
+}
+
+.section-3 > div:nth-child(2) > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.section-3-grid-3-img-2 {
+  height: 500px !important;
+}
+
+.section-3-grid-1 {
+  grid-area: a;
+  box-sizing: content-box;
+  padding: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+.section-3-grid-1 > h4 {
+  color: rgb(45, 45, 156);
+  width: 70%;
+}
+
+.section-3-grid-1 > p {
+  width: 65%;
+  text-align: left;
+}
+
+.section-3-grid-1 > a {
+  text-decoration: none;
+  background-color: rgb(45, 45, 156);
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.section-3-grid-1 > a:hover {
+  background-color: rgb(36, 36, 114);
+}
+
+.section-3-grid-2 {
+  grid-area: b;
+}
+
+.section-3-grid-3 {
+  grid-area: c;
+}
+
+.section-3-grid-4 {
+  grid-area: d;
+  background-color: rgb(45, 45, 156);
+  color: rgb(255, 255, 255);
+  box-sizing: content-box;
+  padding: 40px;
+}
+
+.section-3-grid-4 > p {
+  width: 85%;
+}
+
+.section-3-grid-4 > a {
+  text-decoration: none;
+  color: rgb(45, 45, 156);
+  background-color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.section-3-grid-4 > a:hover {
+  background-color: rgb(224, 223, 223);
+}
+
+.section-3-grid-5 {
+  grid-area: e;
+  box-sizing: content-box;
+  padding: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+.section-3-grid-5 > h4 {
+  color: rgb(45, 45, 156);
+}
+
+.section-3-grid-5 > p {
+  color: rgb(0, 0, 0);
+}
+
+.section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: rgb(237, 237, 237);
+}
+
+.section-4 > div > h3 {
+  color: rgb(45, 45, 156);
+  width: 80%;
+}
+
+.section-4 > div > a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(45, 45, 156);
+  padding: 10px 35px;
+  margin-top: 20px;
+}
+
+.section-4 > div > a:hover {
+  background-color: rgb(36, 36, 104);
+}
+
+.section-5 {
+  background-color: rgb(250, 249, 249);
+}
+
+.section-5 > div {
+  display: grid;
+  grid-template-areas: "a b";
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+}
+
+.section-5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 700px;
+}
+
+.section-5 > div > div:nth-child(1) {
+  background-color: rgb(45, 45, 156);
+  color: white;
+  box-sizing: border-box;
+  padding: 14%;
+}
+
+.section-5 > div > div:nth-child(1) > p {
+  width: 70%;
+  max-width: 600px;
+}
+
+.section-5 > div > div:nth-child(4) {
+  background-color: rgb(255, 255, 255);
+  color: rgb(45, 45, 156);
+  box-sizing: border-box;
+  padding: 14%;
+}
+
+.section-5 > div > div:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14%;
+  background-color: rgb(45, 45, 156);
+  color: rgb(255, 255, 255);
+}
+
+.section-5 > div > div:nth-child(5) > a {
+  color: rgb(45, 45, 156);
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.section-5 > div > div:nth-child(5) > a:hover {
+  background-color: rgb(224, 223, 223);
+}
+
+.section-5 > div > div:nth-child(6) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+  background-color: rgb(255, 208, 167);
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.section-5 > div > div:nth-child(6) > a {
+  color: rgb(45, 45, 156);
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.section-5 > div > div:nth-child(6) > a:hover {
+  background-color: rgba(224, 223, 223, 0.555);
+}
+
+.section-5 > div > div:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  position: relative;
+}
+
+.section-5 > div > div:nth-child(7) > p {
+  width: 70%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.section-5 > div > div:nth-child(7) img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.section-5 > div > div:nth-child(8) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  position: relative;
+}
+
+.section-5 > div > div:nth-child(8) > p {
+  width: 70%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.section-5 > div > div:nth-child(8) img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.quote-mark {
+  position: absolute;
+  top: 3px;
+  left: 60px;
+}
+
+@media screen and (max-width: 800px) {
+  .section-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-}
-
-.hero-section > h2{
-    color: black;
-    font-size: 2.5rem;
-    width: 30%;
     text-align: center;
-}
+  }
 
-.hero-section > a{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(23, 23, 151);
-    padding: 10px 30px;
-}
+  .section-2 > div > p {
+    width: 100%;
+    text-align: center;
+  }
 
-.hero-section > a:hover{
-    background-color: rgb(20, 20, 114);
-}
-
-.section-2{
-    margin: 60px auto;
-    width: 80%;
-}
-
-.section-2 > div > img{
-    width: 40px;
-    height: 40px;
-}
-
-.section-2 > div > h5{
-    margin-bottom: 25px;
-    color: rgb(45, 45, 156);
-}
-
-.section-2 > div > p{
-    width: 70%;
-}
-
-.section-3{
-    background-color: rgb(250, 249, 249);
-}
-
-.section-3 > div:nth-child(1){
-    background-image: url("./Images/white\ sneaker.jpg");
+  .section-3 > div:nth-child(1) {
+    background-image: url(./Images/white\ sneaker.jpg);
     padding: 200px 0;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin: 0 auto;
-    width: 80%;
-    position: relative;
-}
-
-.section-3 > div:nth-child(1) > div{
-    position: absolute;
-    right: 0;
-    top: 60px;
-}
-
-.section-3 > div:nth-child(2){
-    margin:  50px auto 0 auto;
-    width: 80%;
-    display: grid;
-    grid-template-areas:
-    'a a a b b b'
-    'c c c d d d'
-    'c c c e e e';
-}
-
-.section-3 > div:nth-child(2) > img{
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
+    position: relative;
+  }
 
-.section-3-grid-3-img-2{
-    height: 500px!important;
-}
+  .section-3 > div:nth-child(2) {
+    margin: 50px auto 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.section-3-grid-1{
+  .section-3-grid-1 {
     grid-area: a;
     box-sizing: content-box;
     padding: 40px;
     background-color: rgb(255, 255, 255);
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-.section-3-grid-1 > h4{
-    color: rgb(45, 45, 156);
-    width: 70%;
-}
+  .section-3-grid-1 > p {
+    width: 100%;
+    text-align: center;
+  }
 
-.section-3-grid-1 > p{
-    width: 65%;
-    text-align: left;
-}
-
-.section-3-grid-1 > a{
-    text-decoration: none;
-    background-color: rgb(45, 45, 156);
-    color: rgb(255, 255, 255);
-    padding: 15px 30px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.section-3-grid-1 > a:hover{
-    background-color: rgb(36, 36, 114);
-}
-
-.section-3-grid-2{
-    grid-area: b;
-}
-
-.section-3-grid-3{
-    grid-area: c;
-}
-
-.section-3-grid-4{
+  .section-3-grid-4 {
     grid-area: d;
     background-color: rgb(45, 45, 156);
     color: rgb(255, 255, 255);
     box-sizing: content-box;
     padding: 40px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-.section-3-grid-4 > p{
-    width: 85%;
-}
+  .section-3-grid-4 > p {
+    width: 100%;
+    text-align: center;
+  }
 
-.section-3-grid-4 > a{
-    text-decoration: none;
-    color: rgb(45, 45, 156);
-    background-color: rgb(255, 255, 255);
-    padding: 15px 30px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.section-3-grid-4 > a:hover{
-    background-color: rgb(224, 223, 223);
-}
-
-.section-3-grid-5{
+  .section-3-grid-5 {
     grid-area: e;
     box-sizing: content-box;
     padding: 40px;
     background-color: rgb(255, 255, 255);
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-.section-3-grid-5 > h4{
-    color: rgb(45, 45, 156);
-}
-
-.section-3-grid-5 > p{
+  .section-3-grid-5 > p {
     color: rgb(0, 0, 0);
-}
+    text-align: center;
+  }
 
-.section-4{
+  .section-3 > div:nth-child(2) > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .section-4 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-color: rgb(237, 237, 237)
-}
+    background-color: rgb(237, 237, 237);
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-.section-4 > div >h3{
+  .section-4 > div > h3 {
     color: rgb(45, 45, 156);
-    width: 80%;
-}
-
-.section-4 > div > a{
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: rgb(45, 45, 156);
-    padding: 10px 35px;
-    margin-top: 20px;
-}
-
-.section-4 > div > a:hover{
-    background-color: rgb(36, 36, 104);
-}
-
-.section-5{
-    background-color: rgb(250, 249, 249);
-}
-
-.section-5 > div{
-    display: grid;
-    grid-template-areas: 'a b';
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    width: 80%;
-    background-color: rgb(255, 255, 255);
-}
-
-.section-5 img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-height: 700px;
-}
+  }
 
-.section-5 > div > div:nth-child(1){
-    background-color: rgb(45, 45, 156);
-    color: white;
-    box-sizing: border-box;
-    padding: 14%;
-}
-
-.section-5 > div > div:nth-child(1) > p{
-    width: 70%;
-    max-width: 600px;
-}
-
-.section-5 > div > div:nth-child(4){
+  .section-5 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
     background-color: rgb(255, 255, 255);
-    color: rgb(45, 45, 156);
-    box-sizing: border-box;
-    padding: 14%;
-}
+  }
 
-.section-5 > div > div:nth-child(5){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 14%;
-    background-color: rgb(45, 45, 156);
-    color: rgb(255, 255, 255);
-}
+  .section-5 > div > div:nth-child(5) {
+    width: 100%;
+  }
 
-.section-5 > div > div:nth-child(5) > a{
-    color: rgb(45, 45, 156);
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    padding: 10px 30px;
-    display: inline-block;
-    margin-top: 20px;
-}
+  .section-5 > div > div:nth-child(6) {
+    width: 100%;
+  }
 
-.section-5 > div > div:nth-child(5) > a:hover{
-    background-color: rgb(224, 223, 223);
-}
-
-.section-5 > div > div:nth-child(6){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 120px;
-    background-color: rgb(255, 208, 167);
-    color: rgb(255, 255, 255);
-    position: relative;
-}
-
-.section-5 > div > div:nth-child(6) > a{
-    color: rgb(45, 45, 156);
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    padding: 10px 30px;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.section-5 > div > div:nth-child(6) > a:hover{
-    background-color: rgba(224, 223, 223, 0.555);
-}
-
-.section-5 > div > div:nth-child(7){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    position: relative;
-}
-
-.section-5 > div > div:nth-child(7) > p{
-    width: 70%;
-    max-width: 500px;
-    text-align: center;
-}
-
-.section-5 > div > div:nth-child(7) img{
-    width: 40px;
-    height: 40px;
+  .section-5 img {
+    width: 100%;
+    height: 50%;
     object-fit: cover;
-}
-
-.section-5 > div > div:nth-child(8){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    position: relative;
-}
-
-.section-5 > div > div:nth-child(8) > p{
-    width: 70%;
-    max-width: 500px;
-    text-align: center;
-}
-
-.section-5 > div > div:nth-child(8) img{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
-
-.quote-mark{
-    position: absolute;
-    top: 3px;
-    left: 60px;
-}
-
-@media screen and (max-width: 800px) {
-    .section-2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .section-2 > div > p {
-        width: 100%;
-        text-align: center;
-    }
-
-    .section-3 > div:nth-child(1) {
-        background-image: url(./Images/white\ sneaker.jpg);
-        padding: 200px 0;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 0 auto;
-        width: 100%;
-        position: relative;
-    }
-
-    .section-3 > div:nth-child(2) {
-        margin: 50px auto 0 auto;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .section-3-grid-1 {
-        grid-area: a;
-        box-sizing: content-box;
-        padding: 40px;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .section-3-grid-1 > p {
-        width: 100%;
-        text-align: center;
-    }
-
-    .section-3-grid-4 {
-        grid-area: d;
-        background-color: rgb(45, 45, 156);
-        color: rgb(255, 255, 255);
-        box-sizing: content-box;
-        padding: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .section-3-grid-4 > p {
-        width: 100%;
-        text-align: center;
-    }
-
-    .section-3-grid-5 {
-        grid-area: e;
-        box-sizing: content-box;
-        padding: 40px;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .section-3-grid-5 > p {
-        color: rgb(0, 0, 0);
-        text-align: center;
-    }
-
-    .section-3 > div:nth-child(2) > img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
-
-    .section-4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        background-color: rgb(237, 237, 237);
-        flex-direction: column-reverse;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .section-4 > div >h3 {
-        color: rgb(45, 45, 156);
-        width: 100%;
-    }
-
-    .section-5 > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 95%;
-        background-color: rgb(255, 255, 255);
-    }
-
-    .section-5 > div > div:nth-child(5) {
-        width: 100%;
-    }
-
-    .section-5 > div > div:nth-child(6) {
-        width: 100%;
-    }
-
-    .section-5 img {
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-        max-height: 300px;
-    }
+    max-height: 300px;
+  }
 }
